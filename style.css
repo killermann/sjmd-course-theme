@@ -1,0 +1,109 @@
+/*
+ Theme Name:   SJMD Course Theme
+ Theme URI:    https://github.com/killermann/sjmd-course
+ Description:  A GeneratePress child theme for powering Learndash
+ Author:       Sam Killermann
+ Author URI:   https://samuelkillermann.com/
+ Template:     generatepress
+ Version:      0.1
+*/
+
+.flex {
+    display: flex;
+}
+
+    .space-between {
+        justify-content: space-between;
+    }
+
+    .center-everything {
+        justify-content: center;
+        align-items: center;
+    }
+
+.alert {
+    padding: 1em;
+    font-size: .8em;
+    color: rgba(0,0,0,.6);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+    .alert a {
+        color: inherit;
+        text-decoration: underline;
+        padding: .4em .2em;
+    }
+
+    .alert a:hover, .alert a:focus {
+        color: black;
+    }
+
+    .alert p:last-child {
+        margin-bottom: 0;
+    }
+
+.highlight {
+    background-color: #F3F600;
+}
+
+/*********************
+
+MENU & NAVIGATION
+
+*********************/
+
+.not-logged-in {
+    text-align: center;
+}
+
+.inside-header {
+    padding-bottom: 0;
+}
+
+.main-title a {
+    display:block;
+    width: 240px;
+    height: 80px;
+    background:url(img/logo-sjmd-course.svg);
+    background-size:contain;
+    background-repeat: no-repeat;
+    text-indent: -9999px;
+    overflow: hidden;
+}
+
+.site-description {
+    text-align: center;
+}
+
+.main-navigation {
+    background:none;
+}
+    .main-navigation .main-nav ul li a, .menu-toggle {
+        color: currentColor !important;
+        background: none !important;
+        font-weight: 500;
+    }
+
+        .main-navigation .main-nav ul li a:hover {
+            text-decoration: underline;
+            text-decoration-color:  #F3F600;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"] > a {
+            background: none;
+            text-decoration: underline;
+            text-decoration-color:  #F3F600;
+        }
+
+@media (min-width: 767px) {
+    .not-logged-in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .not-logged-in p {
+        margin: 0 .2em;
+    }
+}
