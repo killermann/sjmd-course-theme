@@ -1,1 +1,1 @@
-# sjmd-course-theme
+# SJMD Course Theme
