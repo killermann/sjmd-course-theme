@@ -69,7 +69,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 	do_action( 'generate_after_header' );
 	?>
 
+	<?php
+		$parent_lesson_id = learndash_get_setting( $post, 'lesson' );
+		$parent_lesson = get_post( $parent_lesson_id );
+
+		if ( is_singular( 'sfwd-topic' ) ) {?>
+			<div id="topic-subheader" class="<?php echo basename( get_permalink( $parent_lesson -> ID) );?>">
+				<div id="topic-subheader-contents">
+					<?php
+					echo get_the_title( $parent_lesson -> ID);
+					?>
+				</div>
+			</div>
+
+		<?php } ?>
+
 	<div id="page" class="hfeed site grid-container container grid-parent">
+
+
 		<div id="content" class="site-content">
 			<?php
 			/**

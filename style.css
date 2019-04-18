@@ -47,6 +47,10 @@
     background-color: #F3F600;
 }
 
+body .grid-container {
+    max-width: 1100px;
+}
+
 /*********************
 
 MENU & NAVIGATION
@@ -58,13 +62,26 @@ MENU & NAVIGATION
 }
 
 .inside-header {
-    padding-bottom: 0;
+    padding: 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+    .inside-header:before, .inside-header:after {
+        content:none !important;
+        display:none !important;
+    }
+
+.site-branding {
+    margin: 0 !important;
 }
 
 .main-title a {
     display:block;
-    width: 240px;
-    height: 80px;
+    width: auto;
+    height: 40px;
     background:url(img/logo-sjmd-course.svg);
     background-size:contain;
     background-repeat: no-repeat;
@@ -73,16 +90,30 @@ MENU & NAVIGATION
 }
 
 .site-description {
-    text-align: center;
+    display: none;
 }
 
 .main-navigation {
-    background:none;
+    background:white;
 }
+
+    .main-navigation.toggled {
+        box-shadow: 0px 0px 2em 0px rgba(0,0,50,0.2);
+        border-radius: .5em;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+    }
+
+    .main-navigation.toggled .menu-toggle {
+        opacity: .6;
+    }
+
     .main-navigation .main-nav ul li a, .menu-toggle {
         color: currentColor !important;
         background: none !important;
         font-weight: 500;
+        font-size: 16px;
     }
 
         .main-navigation .main-nav ul li a:hover {
@@ -96,6 +127,73 @@ MENU & NAVIGATION
             text-decoration-color:  #F3F600;
         }
 
+#learndash_course_content_title{
+    font-weight: 900;
+    padding: 0 .4em;
+    font-size: 1.2em;
+    margin: 1em auto .2em;
+}
+
+#learndash_course_content p {
+    margin: 0;
+}
+
+.widget-title {
+    font-weight: 900;
+    font-size: 1em;
+    line-height: 1.2;
+    padding-top: 1em;
+    margin-bottom: .75em;
+    border-top: 4px dashed #67c2e7;
+}
+
+.sidebar .widget_ldcoursenavigation {
+    font-size: .8em;
+}
+
+#topic-subheader {
+    background: #eee;
+}
+    #topic-subheader.module-1 {
+        background: #F1592A;
+        color: white;
+    }
+
+    #topic-subheader.module-2 {
+        background: #F7941D;
+        color: white;
+    }
+
+    #topic-subheader.module-3 {
+        background: #3AB54A;
+        color: white;
+    }
+
+    #topic-subheader.module-4 {
+        background: #0E76BD;
+        color: white;
+    }
+
+    #topic-subheader.module-5 {
+        background: #92278F;
+        color: white;
+    }
+
+    #topic-subheader.module-6 {
+        background: #ED207B;
+        color: white;
+    }
+
+    #topic-subheader-contents {
+        max-width: 500px;
+        padding: 40px;
+        margin: 0 auto;
+        font-size: 28px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+
 @media (min-width: 767px) {
     .not-logged-in {
         display: flex;
@@ -106,4 +204,19 @@ MENU & NAVIGATION
     .not-logged-in p {
         margin: 0 .2em;
     }
+
+
+    .widget_ldcoursenavigation {
+        opacity: .3;
+        transition: .3s all;
+    }
+
+
+    .widget_ldcoursenavigation:hover,
+    .widget_ldcoursenavigation:focus,
+    .widget_ldcoursenavigation:focus-within {
+        opacity: 1;
+    }
+
+
 }
