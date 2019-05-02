@@ -61,6 +61,10 @@ MENU & NAVIGATION
     text-align: center;
 }
 
+.site-header {
+    box-shadow: 0px 0px 2em 0px rgba(0,0,50,0.2)
+}
+
 .inside-header {
     padding: 0 8px;
     display: flex;
@@ -127,6 +131,27 @@ MENU & NAVIGATION
             text-decoration-color:  #F3F600;
         }
 
+
+/* LEARNDASH OVERRIDES */
+
+.learndash .learndash_topic_dots.type-dots {
+    font-size: 1rem;
+}
+
+.learndash .learndash_topic_dots.type-dots .topic-completed,
+.learndash .btn-blue, .learndash .btn-join, .learndash #btn-join, .learndash_checkout_buttons input.btn-join[type=button], .learndash_checkout_button input[type=submit], .learndash a#quiz_continue_link, #sfwd-mark-complete #learndash_mark_complete_button, .learndash .wpProQuiz_button, .thumbnail.course a.btn-primary {
+    background-color: #67c2e7;
+    color: black;
+}
+
+.learndash .btn-blue, .learndash .btn-join, .learndash #btn-join, .learndash_checkout_buttons input.btn-join[type=button], .learndash_checkout_button input[type=submit], .learndash a#quiz_continue_link, #learndash_back_to_lesson a, #learndash_next_prev_link a.prev-link, #learndash_next_prev_link a.next-link, #sfwd-mark-complete #learndash_mark_complete_button, .learndash .wpProQuiz_button, .learndash .wpProQuiz_button[name=reShowQuestion], .wpProQuiz_content .wpProQuiz_button2, .thumbnail.course a.btn-primary {
+    border-radius: 100px;
+}
+
+.learndash .btn-blue:hover, .learndash .btn-blue:active, .learndash .btn-blue:focus, .learndash .btn-join:hover, .learndash .btn-join:active, .learndash .btn-join:focus, .learndash #btn-join:hover, .learndash #btn-join:active, .learndash #btn-join:focus, .learndash_checkout_buttons input.btn-join[type=button]:hover, .learndash_checkout_buttons input.btn-join[type=button]:active, .learndash_checkout_buttons input.btn-join[type=button]:focus, .learndash_checkout_button input[type=submit]:hover, .learndash_checkout_button input[type=submit]:active, .learndash_checkout_button input[type=submit]:focus, .learndash a#quiz_continue_link:hover, .learndash a#quiz_continue_link:active, .learndash a#quiz_continue_link:focus, #sfwd-mark-complete #learndash_mark_complete_button:hover, #sfwd-mark-complete #learndash_mark_complete_button:active, #sfwd-mark-complete #learndash_mark_complete_button:focus, .learndash .wpProQuiz_button:hover, .learndash .wpProQuiz_button:active, .learndash .wpProQuiz_button:focus, .thumbnail.course a.btn-primary:hover, .thumbnail.course a.btn-primary:active, .thumbnail.course a.btn-primary:focus {
+    background-color: #2690ba;
+}
+
 #learndash_course_content_title{
     font-weight: 900;
     padding: 0 .4em;
@@ -144,12 +169,20 @@ MENU & NAVIGATION
     line-height: 1.2;
     padding-top: 1em;
     margin-bottom: .75em;
-    border-top: 4px dashed #67c2e7;
 }
 
 .sidebar .widget_ldcoursenavigation {
     font-size: .8em;
+    margin: 64px auto;
+    max-width: 94%;
+    padding: 1em;
+    border-radius: 1em;
+    background: #f1f1f1;
 }
+
+    .widget_course_return {
+        display: none;
+    }
 
 #topic-subheader {
     background: #eee;
@@ -193,6 +226,67 @@ MENU & NAVIGATION
         text-align: center;
     }
 
+.expand_collapse {
+    font-size: calc(11px + .4vw);
+}
+
+
+.entry-content h2,
+.entry-content h3,
+.entry-content h4 {
+    margin-top: 2em;
+}
+
+.entry-content h2 {
+    font-size: 1.8em;
+}
+
+.entry-content h3 {
+    font-size: 1.4em;
+}
+
+.entry-content h4 {
+    font-size: .8em;
+}
+
+.entry-content a {
+    text-decoration: underline;
+}
+
+.entry-content .emoji {
+    margin-right: .5em !important;
+}
+
+pre {
+    border: 3px dashed #F3F600;
+    border-radius: 20px;
+    position: relative;
+    padding: 20px;
+    line-height: 1.3;
+    background: #ffffcf;
+    overflow: visible;
+    margin: 40px auto 0;
+    color: #666416;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+    pre:before {
+        content: "FIELDWORK";
+        position: absolute;
+        font-size: 12px;
+        padding: 3px 6px;
+        top: -14px;
+        left: 20px;
+        font-weight: bold;
+        background: #F3F600;
+        border-radius: 8px;
+        color: #666416;
+        border: 3px solid white;
+    }
 
 @media (min-width: 767px) {
     .not-logged-in {
