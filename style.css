@@ -177,7 +177,7 @@ MENU & NAVIGATION
     max-width: 94%;
     padding: 1em;
     border-radius: 1em;
-    background: #f1f1f1;
+    background: #f3fcff;
 }
 
     .widget_course_return {
@@ -185,36 +185,31 @@ MENU & NAVIGATION
     }
 
 #topic-subheader {
-    background: #eee;
+    background: #818990;
+    color: white;
 }
     #topic-subheader.module-1 {
         background: #F1592A;
-        color: white;
     }
 
     #topic-subheader.module-2 {
         background: #F7941D;
-        color: white;
     }
 
     #topic-subheader.module-3 {
         background: #3AB54A;
-        color: white;
     }
 
     #topic-subheader.module-4 {
         background: #0E76BD;
-        color: white;
     }
 
     #topic-subheader.module-5 {
         background: #92278F;
-        color: white;
     }
 
     #topic-subheader.module-6 {
         background: #ED207B;
-        color: white;
     }
 
     #topic-subheader-contents {
