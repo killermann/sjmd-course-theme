@@ -181,7 +181,7 @@ SINGLE POSTS
 
         .header-buttons a:hover,
         .header-buttons a:focus {
-            background-color: #F3F600;
+            color: #67c2e7 !important;
         }
 
 .widget-title {
@@ -194,13 +194,32 @@ SINGLE POSTS
 
 /* Learndash Overrides */
 
-.ld-course-content-6 p {
-    margin: 0;
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger,
+.learndash-wrapper .ld-table-list .ld-table-list-header,
+.learndash-wrapper .ld-focus .ld-focus-sidebar .ld-course-navigation-heading h3 a {
+    background:#67c2e7 !important;
+    color: black !important;
+}
+
+    .learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger .ld-icon {
+        background-color: #2690ba !important;
+        color: white;
+    }
+
+    .learndash-wrapper .ld-focus.ld-focus-sidebar-collapsed .ld-focus-sidebar .ld-focus-sidebar-trigger .ld-icon:before {
+        transform: rotate(180deg);
+        display: block;
+    }
+
+.learndash-wrapper {
+    color: black;
 }
 
 .ld-focus-comments {
     display: none;
 }
+
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name,
 .ld-table-list-item,
 .learndash-wrapper .ld-course-navigation .ld-lesson-item-preview .ld-lesson-title {
@@ -208,6 +227,7 @@ SINGLE POSTS
     text-decoration: none;
     font-weight: 800 !important;
 }
+
 #topic-subheader {
     background: #818990;
     color: white;
