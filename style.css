@@ -246,15 +246,15 @@ SINGLE POSTS
     margin-top: 2em;
 }
 
-.entry-content h2 {
-    font-size: 1.8em;
+.ld-tabs-content h2 {
+    font-size: 1.66em;
 }
 
-.entry-content h3 {
-    font-size: 1.4em;
+.ld-tabs-content h3 {
+    font-size: 1.25em;
 }
 
-.entry-content h4 {
+.ld-tabs-content h4 {
     font-size: .8em;
 }
 
@@ -262,7 +262,7 @@ SINGLE POSTS
     text-decoration: underline;
 }
 
-.entry-content .emoji {
+.ld-tabs-content .emoji {
     margin-right: .5em !important;
 }
 
@@ -274,7 +274,7 @@ pre {
     line-height: 1.3;
     background: #ffffcf;
     overflow: visible;
-    margin: 40px auto 0;
+    margin: 40px auto 30px;
     color: #666416;
     white-space: pre-wrap;       /* Since CSS 2.1 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
@@ -307,19 +307,5 @@ pre {
     .not-logged-in p {
         margin: 0 .2em;
     }
-
-
-    .widget_ldcoursenavigation {
-        opacity: .3;
-        transition: .3s all;
-    }
-
-
-    .widget_ldcoursenavigation:hover,
-    .widget_ldcoursenavigation:focus,
-    .widget_ldcoursenavigation:focus-within {
-        opacity: 1;
-    }
-
 
 }
