@@ -183,13 +183,7 @@ SINGLE POSTS
         .header-buttons a:focus {
             background-color: #F3F600;
         }
-p {
-    margin-bottom: 0;
-}
 
-p + p {
-    margin-top: 1.5em;
-}
 .widget-title {
     font-weight: 900;
     font-size: 1em;
@@ -200,6 +194,9 @@ p + p {
 
 /* Learndash Overrides */
 
+.ld-focus-comments {
+    display: none;
+}
 .learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name,
 .ld-table-list-item,
 .learndash-wrapper .ld-course-navigation .ld-lesson-item-preview .ld-lesson-title {
