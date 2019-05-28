@@ -228,6 +228,23 @@ SINGLE POSTS
     font-weight: 800 !important;
 }
 
+.learndash-resume-button input[type=submit] {
+    background: #f3f600 !important;
+    color: #666416;
+    display: inline-block;
+    padding: 1em 2.2em;
+    line-height: 1.25;
+    background: none;
+    border-radius: 999px;
+    border: none;
+    text-decoration: none;
+    font-weight: 800;
+    text-align: center;
+    -webkit-transition: all .15s ease;
+    transition: all .15s ease;
+    font-size: 18px;
+}
+
 #topic-subheader {
     background: #818990;
     color: white;
