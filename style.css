@@ -183,9 +183,13 @@ SINGLE POSTS
         .header-buttons a:focus {
             background-color: #F3F600;
         }
+p {
+    margin-bottom: 0;
+}
 
-
-
+p + p {
+    margin-top: 1.5em;
+}
 .widget-title {
     font-weight: 900;
     font-size: 1em;
