@@ -46,13 +46,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 			do_action( 'generate_after_entry_title' );
 			?>
 
-			<ul class="header-buttons">
-				<?php if( get_field('community_link') ): ?>
-				<li><a class="far fa-download" title="Discuss this in the community" target="_blank" href="<?php the_field('community_link')?>">
-					<svg class="sjmd-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><style>.cls-1{fill:#67c2e7;}.cls-2{fill:#fff;}</style></defs><title>Community Shortcut</title><path class="cls-1" d="M55.35,5.1H8.65a6.51,6.51,0,0,0-6.54,6.49V41.28a6.51,6.51,0,0,0,6.54,6.49h6.89V58.9L25.89,47.77H55.35a6.51,6.51,0,0,0,6.54-6.49V11.59A6.51,6.51,0,0,0,55.35,5.1Z"/><path class="cls-2" d="M16,22.19a4.21,4.21,0,1,1-4.2,4.2A4.21,4.21,0,0,1,16,22.19Z"/><path class="cls-2" d="M32,22.19a4.21,4.21,0,1,1-4.21,4.2A4.2,4.2,0,0,1,32,22.19Z"/><circle class="cls-2" cx="47.96" cy="26.39" r="4.2"/></svg>
-				</a></li>
-				<?php endif;?>
-			</ul>
+			
 		</header><!-- .entry-header -->
 
 		<?php

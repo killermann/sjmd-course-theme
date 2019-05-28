@@ -51,6 +51,10 @@ body .grid-container {
     max-width: 1100px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 800;
+}
+
 /*********************
 
 MENU & NAVIGATION
@@ -59,6 +63,8 @@ MENU & NAVIGATION
 
 .not-logged-in {
     text-align: center;
+    position: relative;
+    z-index: 9999;
 }
 
 .site-header {
@@ -151,7 +157,9 @@ SINGLE POSTS
 
     .header-buttons {
         list-style: none;
+        float: right;
         margin: 0;
+        display: inline-block;
     }
 
         .header-buttons li {
@@ -162,12 +170,13 @@ SINGLE POSTS
         .header-buttons a {
             border-radius: 100px;
             display: flex;
-            width: 40px;
-            height: 40px;
+            width: 50px;
+            height: 50px;
             font-size: 30px;
             align-items: center;
             justify-content: center;
-            padding: .2em;
+            text-align: center;
+            margin: .5rem;
         }
 
         .header-buttons a:hover,
@@ -176,36 +185,6 @@ SINGLE POSTS
         }
 
 
-/* LEARNDASH OVERRIDES */
-
-.learndash .learndash_topic_dots.type-dots {
-    font-size: 1rem;
-}
-
-.learndash .learndash_topic_dots.type-dots .topic-completed,
-.learndash .btn-blue, .learndash .btn-join, .learndash #btn-join, .learndash_checkout_buttons input.btn-join[type=button], .learndash_checkout_button input[type=submit], .learndash a#quiz_continue_link, #sfwd-mark-complete #learndash_mark_complete_button, .learndash .wpProQuiz_button, .thumbnail.course a.btn-primary {
-    background-color: #67c2e7;
-    color: black;
-}
-
-.learndash .btn-blue, .learndash .btn-join, .learndash #btn-join, .learndash_checkout_buttons input.btn-join[type=button], .learndash_checkout_button input[type=submit], .learndash a#quiz_continue_link, #learndash_back_to_lesson a, #learndash_next_prev_link a.prev-link, #learndash_next_prev_link a.next-link, #sfwd-mark-complete #learndash_mark_complete_button, .learndash .wpProQuiz_button, .learndash .wpProQuiz_button[name=reShowQuestion], .wpProQuiz_content .wpProQuiz_button2, .thumbnail.course a.btn-primary {
-    border-radius: 100px;
-}
-
-.learndash .btn-blue:hover, .learndash .btn-blue:active, .learndash .btn-blue:focus, .learndash .btn-join:hover, .learndash .btn-join:active, .learndash .btn-join:focus, .learndash #btn-join:hover, .learndash #btn-join:active, .learndash #btn-join:focus, .learndash_checkout_buttons input.btn-join[type=button]:hover, .learndash_checkout_buttons input.btn-join[type=button]:active, .learndash_checkout_buttons input.btn-join[type=button]:focus, .learndash_checkout_button input[type=submit]:hover, .learndash_checkout_button input[type=submit]:active, .learndash_checkout_button input[type=submit]:focus, .learndash a#quiz_continue_link:hover, .learndash a#quiz_continue_link:active, .learndash a#quiz_continue_link:focus, #sfwd-mark-complete #learndash_mark_complete_button:hover, #sfwd-mark-complete #learndash_mark_complete_button:active, #sfwd-mark-complete #learndash_mark_complete_button:focus, .learndash .wpProQuiz_button:hover, .learndash .wpProQuiz_button:active, .learndash .wpProQuiz_button:focus, .thumbnail.course a.btn-primary:hover, .thumbnail.course a.btn-primary:active, .thumbnail.course a.btn-primary:focus {
-    background-color: #2690ba;
-}
-
-#learndash_course_content_title{
-    font-weight: 900;
-    padding: 0 .4em;
-    font-size: 1.2em;
-    margin: 1em auto .2em;
-}
-
-#learndash_course_content p {
-    margin: 0;
-}
 
 .widget-title {
     font-weight: 900;
@@ -215,19 +194,15 @@ SINGLE POSTS
     margin-bottom: .75em;
 }
 
-.sidebar .widget_ldcoursenavigation {
-    font-size: .8em;
-    margin: 64px auto;
-    max-width: 94%;
-    padding: 1em;
-    border-radius: 1em;
-    background: #f3fcff;
+/* Learndash Overrides */
+
+.learndash-wrapper .ld-item-list .ld-item-list-item .ld-item-name,
+.ld-table-list-item,
+.learndash-wrapper .ld-course-navigation .ld-lesson-item-preview .ld-lesson-title {
+    color: black;
+    text-decoration: none;
+    font-weight: 800 !important;
 }
-
-    .widget_course_return {
-        display: none;
-    }
-
 #topic-subheader {
     background: #818990;
     color: white;
@@ -264,11 +239,6 @@ SINGLE POSTS
         font-weight: 800;
         text-align: center;
     }
-
-.expand_collapse {
-    font-size: calc(11px + .4vw);
-}
-
 
 .entry-content h2,
 .entry-content h3,
