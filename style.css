@@ -149,11 +149,6 @@ SINGLE POSTS
     width: 1em;
     height: 1em;
 }
-.entry-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
 
     .header-buttons {
         list-style: none;
@@ -302,6 +297,11 @@ SINGLE POSTS
 
 .entry-content a {
     text-decoration: underline;
+}
+
+.entry-content p,
+.ld-tabs-content p {
+    max-width: 40em;
 }
 
 .ld-tabs-content .emoji {
