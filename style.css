@@ -194,6 +194,10 @@ SINGLE POSTS
 
 /* Learndash Overrides */
 
+.ld-course-content-6 p {
+    margin: 0;
+}
+
 .ld-focus-comments {
     display: none;
 }
