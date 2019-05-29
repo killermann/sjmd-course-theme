@@ -90,9 +90,9 @@ MENU & NAVIGATION
 
 .main-title a {
     display:block;
-    width: auto;
+    width: 120px;
     height: 40px;
-    background:url(img/logo-sjmd-course.png);
+    background:url(img/logo-sjmd-course.svg);
     background-size:contain;
     background-repeat: no-repeat;
     text-indent: -9999px;
