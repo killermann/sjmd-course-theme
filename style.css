@@ -197,6 +197,10 @@ SINGLE POSTS
     color: black !important;
 }
 
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu {
+    display: none !important;
+}
+
     .learndash-wrapper .ld-focus .ld-focus-sidebar .ld-focus-sidebar-trigger .ld-icon {
         background-color: #2690ba !important;
         color: white;
