@@ -92,7 +92,7 @@ MENU & NAVIGATION
     display:block;
     width: auto;
     height: 40px;
-    background:url(img/logo-sjmd-course.svg);
+    background:url(img/logo-sjmd-course.png);
     background-size:contain;
     background-repeat: no-repeat;
     text-indent: -9999px;
@@ -227,8 +227,8 @@ SINGLE POSTS
     background: #f3f600 !important;
     color: #666416;
     display: inline-block;
-    padding: 1em 2.2em;
-    line-height: 1.25;
+    padding: 10px 20px;
+    line-height: inherit;
     background: none;
     border-radius: 999px;
     border: none;
@@ -297,6 +297,10 @@ SINGLE POSTS
 
 .entry-content a {
     text-decoration: underline;
+}
+
+.wp-block-button__link {
+    text-decoration: none !important;
 }
 
 .entry-content p,
