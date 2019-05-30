@@ -197,7 +197,8 @@ SINGLE POSTS
     color: black !important;
 }
 
-.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu {
+.learndash-wrapper .ld-focus .ld-focus-header .ld-user-menu,
+.learndash-wrapper .ld-modal {
     display: none !important;
 }
 
